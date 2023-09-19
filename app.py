@@ -25,6 +25,15 @@ def display_banner():
     print(banner)
 
 def file_to_image(input_file, output_image="output.png"):
+	print(Style.RESET_ALL + """
+       ###################################
+       ##                               ##
+       ##""" + Fore.BLUE + """  Converting... Please Wait... """ + Style.RESET_ALL + """##
+       ##                               ##
+       ###################################
+
+Meanwhile Follow me on my Socials!\n""" + Fore.GREEN + """
+    Made by""" + Fore.LIGHTBLUE_EX + " D4RKH0R1Z0N " + Fore.WHITE + "(" + Fore.BLUE + "https://github.com/D4RKH0R1Z0N" + Fore.WHITE + ")" + "\n" + Fore.LIGHTBLUE_EX + "    Discord " + Fore.YELLOW + "and " + Fore.LIGHTMAGENTA_EX + "Instagram " + Fore.WHITE + ": @D4RKH0R1Z0N\n")
     try:
         with open(input_file, 'rb') as f:
             file_data = f.read()
@@ -39,15 +48,6 @@ def file_to_image(input_file, output_image="output.png"):
 
         # Save the image
         image.save(output_image)
-        print(Style.RESET_ALL + """
-       ###################################
-       ##                               ##
-       ##""" + Fore.BLUE + """  Converting... Please Wait... """ + Style.RESET_ALL + """##
-       ##                               ##
-       ###################################
-
-Meanwhile Follow me on my Socials!\n""" + Fore.GREEN + """
-    Made by""" + Fore.LIGHTBLUE_EX + " D4RKH0R1Z0N " + Fore.WHITE + "(" + Fore.BLUE + "https://github.com/D4RKH0R1Z0N" + Fore.WHITE + ")" + "\n" + Fore.LIGHTBLUE_EX + "    Discord " + Fore.YELLOW + "and " + Fore.LIGHTMAGENTA_EX + "Instagram " + Fore.WHITE + ": @D4RKH0R1Z0N\n")
         sleep(1.8)
         print(Fore.GREEN + f"File '{input_file}' has been converted and saved as '{output_image}'" + Style.RESET_ALL)
     except FileNotFoundError:
@@ -57,6 +57,15 @@ Meanwhile Follow me on my Socials!\n""" + Fore.GREEN + """
         print("")
 
 def image_to_file(input_image):
+	print(Style.RESET_ALL + """
+       ###################################
+       ##                               ##
+       ##""" + Fore.BLUE + """  Converting... Please Wait... """ + Style.RESET_ALL + """##
+       ##                               ##
+       ###################################
+
+Meanwhile Follow me on my Socials!\n""" + Fore.GREEN + """
+    Made by""" + Fore.LIGHTBLUE_EX + " D4RKH0R1Z0N " + Fore.WHITE + "(" + Fore.BLUE + "https://github.com/D4RKH0R1Z0N" + Fore.WHITE + ")" + "\n" + Fore.LIGHTBLUE_EX + "    Discord " + Fore.YELLOW + "and " + Fore.LIGHTMAGENTA_EX + "Instagram " + Fore.WHITE + ": @D4RKH0R1Z0N\n")
     try:
         # Open the image
         image = Image.open(input_image)
@@ -69,16 +78,6 @@ def image_to_file(input_image):
 
         # Extract the original filename from the header
         original_filename = header.decode()
-
-        print(Style.RESET_ALL + """
-       ###################################
-       ##                               ##
-       ##""" + Fore.BLUE + """  Converting... Please Wait... """ + Style.RESET_ALL + """##
-       ##                               ##
-       ###################################
-
-Meanwhile Follow me on my Socials!\n""" + Fore.GREEN + """
-    Made by""" + Fore.LIGHTBLUE_EX + " D4RKH0R1Z0N " + Fore.WHITE + "(" + Fore.BLUE + "https://github.com/D4RKH0R1Z0N" + Fore.WHITE + ")" + "\n" + Fore.LIGHTBLUE_EX + "    Discord " + Fore.YELLOW + "and " + Fore.LIGHTMAGENTA_EX + "Instagram " + Fore.WHITE + ": @D4RKH0R1Z0N\n")
         sleep(1.8)
 
         if original_filename:
